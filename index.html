@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIH</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        /* Set background image and style */
+        background-image: url("img1.jpeg");
+        background-size: cover; /* Cover the entire viewport */
+        background-repeat: no-repeat; /* Prevent image repetition */
+        font-family: Arial, sans-serif; /* Choose a default font */
+        color: white; /* Set default text color */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .container {
+        text-align: center; /* Center the text in the container */
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: center; /* Center the buttons horizontally */
+        margin-top: 20px; /* Add some space at the top */
+      }
+
+      /* Style for the button links */
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #0074d9; /* Change the background color */
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 0 10px;
+      }
+
+      .button:hover {
+        background-color: #0056b3; /* Change the background color on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Paryat Bharat</h1>
+      <div class="buttons">
+        <button id="villageRegistrationBtn">Village Registration</button>
+        <button id="viewVillagesBtn">View Villages</button>
+      </div>
+    </div>
+
+    <script>
+      // Get references to the buttons
+      const villageRegistrationBtn = document.getElementById(
+        "villageRegistrationBtn"
+      );
+      const viewVillagesBtn = document.getElementById("viewVillagesBtn");
+
+      // Event listener for the "Village Registration" button
+      villageRegistrationBtn.addEventListener("click", () => {
+        // Redirect to the village registration page
+        window.location.href = "village_registration.html";
+      });
+
+      // Event listener for the "View Villages" button
+      viewVillagesBtn.addEventListener("click", () => {
+        // Redirect to the village listing page
+        window.location.href = "village_listing.html";
+      });
+    </script>
+  </body>
+</html>

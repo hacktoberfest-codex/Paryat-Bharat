@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Village Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Village Registration Form</h1>
+      <main>
+        <form id="villageRegistrationForm">
+          <div class="form-group">
+            <label for="villageId"
+              >Village ID <span class="required">*</span></label
+            >
+            <input type="text" id="villageId" name="villageId" required />
+          </div>
+          <div class="form-group">
+            <label for="villageName"
+              >Village Name <span class="required">*</span></label
+            >
+            <input type="text" id="villageName" name="villageName" required />
+          </div>
+          <div class="form-group">
+            <label for="address"
+              >Address
+              <small>(Separate multiple entries with a ( , ))</small></label
+            >
+            <input type="text" id="address" name="address" />
+          </div>
+          <div class="form-group">
+            <label for="nearbyCity"
+              >Nearby City
+              <small>(Separate multiple entries with a ( , ))</small></label
+            >
+            <input type="text" id="nearbyCity" name="nearbyCity" />
+          </div>
+          <div class="form-group">
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" />
+          </div>
+          <div class="form-group">
+            <label for="pincode">Pincode</label>
+            <input type="text" id="pincode" name="pincode" />
+          </div>
+          <div class="form-group">
+            <label for="food">Food</label>
+            <select id="food" name="food">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="accommodation">Accommodation</label>
+            <select id="accommodation" name="accommodation">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="form-group" id="accommodationDetails">
+            <label for="numAccommodations">Number of Accommodations</label>
+            <input
+              type="number"
+              id="numAccommodations"
+              name="numAccommodations"
+            />
+          </div>
+          <div class="form-group">
+            <label for="culturalActivities"
+              >Cultural Activities
+              <small>(Separate multiple entries with a ( , ))</small></label
+            >
+            <input
+              type="text"
+              id="culturalActivities"
+              name="culturalActivities"
+            />
+          </div>
+          <div class="form-group">
+            <label for="travelAvailability">Travel Availability</label>
+            <select id="travelAvailability" name="travelAvailability">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="form-group" id="travelExpenses">
+            <label for="travelExpensesPrice">Travel Expenses (Price)</label>
+            <input
+              type="number"
+              id="travelExpensesPrice"
+              name="travelExpensesPrice"
+            />
+          </div>
+          <div class="form-group">
+            <label for="surroundingPlaces"
+              >Surrounding Places
+              <small>(Separate multiple entries with a ( , ))</small></label
+            >
+            <input
+              type="text"
+              id="surroundingPlaces"
+              name="surroundingPlaces"
+            />
+          </div>
+          <div class="form-group">
+            <label for="totalBaseCharge">Total Base Charge</label>
+            <input type="number" id="totalBaseCharge" name="totalBaseCharge" />
+          </div>
+          <div class="form-group">
+            <label for="phoneNumber"
+              >Phone Number <span class="required">*</span></label
+            >
+            <input type="tel" id="phoneNumber" name="phoneNumber" required />
+          </div>
+          <div class="form-group">
+            <label for="altPhoneNumber">Alternative Phone Number</label>
+            <input type="tel" id="altPhoneNumber" name="altPhoneNumber" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </main>
+      <footer>
+        <p>&copy; 2023 Paryat Bharat</p>
+      </footer>
+    </div>
+  </body>
+</html>

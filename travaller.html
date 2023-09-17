@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Traveler Registration</title>
+  </head>
+  <body>
+    <h1>Traveler Registration</h1>
+    <form action="traveler_registration.php" method="post">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required /><br /><br />
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+      /><br /><br />
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input
+        type="password"
+        id="confirmPassword"
+        name="confirmPassword"
+        required
+      /><br /><br />
+
+      <label for="dateOfBirth">Date of Birth:</label>
+      <input
+        type="date"
+        id="dateOfBirth"
+        name="dateOfBirth"
+        required
+      /><br /><br />
+
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="Male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female" />
+      <label for="female">Female</label><br /><br />
+
+      <label for="country">Country of Residence:</label>
+      <select id="country" name="country" required>
+        <option value="USA">USA</option>
+        <option value="Canada">Canada</option>
+        <!-- Add more countries as needed --></select
+      ><br /><br />
+
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" /><br /><br />
+
+      <label>Interests and Preferences:</label><br />
+      <input
+        type="checkbox"
+        id="culturalExperiences"
+        name="interests[]"
+        value="Cultural Experiences"
+      />
+      <label for="culturalExperiences">Cultural Experiences</label><br />
+      <input
+        type="checkbox"
+        id="natureExploration"
+        name="interests[]"
+        value="Nature Exploration"
+      />
+      <label for="natureExploration">Nature Exploration</label><br /><br />
+
+      <label for="profilePicture">Profile Picture (Upload):</label>
+      <input
+        type="file"
+        id="profilePicture"
+        name="profilePicture"
+        accept="image/*"
+      /><br /><br />
+
+      <input
+        type="checkbox"
+        id="termsAndConditions"
+        name="termsAndConditions"
+        required
+      />
+      <label for="termsAndConditions">I agree to the terms and conditions</label
+      ><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
